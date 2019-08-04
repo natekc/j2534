@@ -17,3 +17,4 @@ install: j2534
 	cp j2534.h $(INSTALL_PREFIX)/include/
 	cp j2534.pc /usr/lib/pkgconfig/
 	cp j2534.so $(INSTALL_LIBDIR)/j2534.so
+	ln -sf $(INSTALL_LIBDIR)/j2534.so $(INSTALL_LIBDIR)/libj2534.so
